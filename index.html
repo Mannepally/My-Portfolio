@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/344139dd72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li> <a href="#header">Home</a></li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li> <a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> Software Developer </p>
+            <h1> Hi, I am <span>Kavya Mannepally</span> <br>Form Hyderabad</h1>
+        </div>
+    </div>
+</div>
+<!--------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About Me </h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere commodi nulla accusantium vitae incidunt quam, quidem dicta ut dignissimos, nam quis necessitatibus ipsum doloremque eaque porro soluta cumque quae? Pariatur?</p>
+                <div class="tab-titles">
+                    <p class=" tab-links active-link" onclick="opentab('undergraduation')">Undergraduation</p>
+                    <p class="tab-links" onclick="opentab('intermediate')">Intermediate</p>
+                    <p class="tab-links" onclick="opentab('schooling')">Schooling</p>
+                </div>
+                <div class="tab-contents active-tab" id="undergraduation">
+
+                    <ul>
+                        <li><span>TKR College of Engineering and Technology</span></li>
+                        <li><span>Computer Science Engineering</span></li>
+                         <li><span>8.4 C.G.P.A</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="intermediate">
+                    <ul>
+                        <li><span>Geethanjali Junior College</span></li>
+                        <li><span>M.P.C</span></li>
+                         <li><span>953 Marks</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="schooling">
+                    <ul>
+                        <li><span>Little Flower High School</span></li>
+                        
+                         <li><span>9.5 C.G.P.A</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------skills-------------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title"> My Skills </h1>
+        <div class="skills-list">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Technical Skills</h2>
+           <p><ul>
+            <li>HTML </li>
+            <li>CSS</li>
+            <li>Java Script</li>
+            <li>React JS</li>
+            <li>Python</li>
+            <li>Pandas</li>
+           </ul></p>
+            
+        </div>
+        <div>
+            <i class="fa-solid fa-gears"></i>
+            <h2>Professional skills</h2>
+            <p>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Time management</li>
+                    <li>Team Worker</li>
+                    <li>Self Motivated</li>
+                    <li>Creative</li>  
+                </ul>
+
+            </p>
+            
+        </div>
+
+        </div>
+    </div>
+</div>
+<!-----------------------Projects-->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title"> My Work </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/p2.jpg">
+                <div class="layer"> 
+                    <h3> Hospital Website</h3>
+                    <p>A simple platform accessible to people seeking information about available doctors and the facilities they provide</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/p5.jpg">
+                <div class="layer"> 
+                    <h3> IOT based ambulance refuse system</h3>
+                    <p>Our project is an IoT-based ambulance rescue system with the main objective of saving victims' lives by clearing traffic using RFID tags and sending information to nearby police, hospitals, and their family members.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------------contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kavyamannepally@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>8466005595</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kavya_mannepally/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kavya-mannepally-b84440244?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BX%2Ba52m2wSt6DvdT6V3hNyQ%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/M.KAVYA RESUME.pdf" class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>               
+                <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ kavya mannepally</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbx841pUvj93Vsz9ZIFi_podJH98fbOAOYH3AdTJtI_rHBTw2_URqgdjnlP5iH3sw0IE/exec>'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
